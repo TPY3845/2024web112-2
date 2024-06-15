@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+*{
+/* border:solid 1px black; */
+ font-family: "Kiwi Maru", serif;
+}
+
+/* .navbar-nav{
+ margin-left:200px; 
+} */
+
+.toTop-arrow {
+width: 2.5rem;
+height: 2.5rem;
+padding: 0;
+margin: 0;
+border: 0;
+border-radius: 33%;
+opacity: 0.6;
+background: #000;
+cursor: pointer;
+position:fixed;
+right: 1rem;
+bottom: 1rem;
+display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+width: 18px;
+height: 5px;
+border-radius: 3px;
+background: #f90;
+position: absolute;
+content: "";
+}
+.toTop-arrow::before {
+transform: rotate(-45deg) translate(0, -50%);
+left: 0.5rem;
+}
+.toTop-arrow::after {
+transform: rotate(45deg) translate(0, -50%);
+right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+html {
+	scroll-behavior: smooth;
+}
+h{
+  padding:10px;
+}
+
+.navbar-brand {
+  border:solid 2px black;
+  border-radius:15px;
+}
+.nav-item {
+/*   border:solid 2px black; */
+}
+nav a:hover {
+  border-radius:8px;
+	animation: colorize 0.5s ease 0s;
+	animation-fill-mode: forwards;
+	transition: all 0.5s ease 0s;
+}
+
+#table1:hover {
+	background-color:#3a3b3b;
+  color:#fff;
+}
+#table2:hover {
+	background-color:#ffbc8f;
+}
+#table3:hover {
+	background-color: #95bdfc;
+}
+#table4:hover {
+	background-color:#ae56d1;
+}
+#table5:hover {
+	background-color:#f7f179;
+}
+#table6:hover {
+	background-color:#f59898;
+}
+#table7:hover {
+	background-color:#d4d5d6;
+}
+
+.ncyu{
+  padding-top:35px;
+}
+#s1 {
+  background-color:#ffbc8f;
+  padding-top:10px;
+  }
+
+ .col-sm-4{
+  border-color:red;
+   padding:20px;
+    position:absolute;
+}
+.row{
+ border-color:blue; 
+   margin:10px;
+}
+.container-fluid{
+   border-color:#c8f542; 
+}
+
+.namecard{
+ position: relative;
+/*   width:350px;
+  height:200px; */
+  padding:20px;
+  margin-left:10;
+  margin-right:auto;
+  /*兩邊都往內推一樣的距離(皆推到最邊邊) 於是border變成置中*/
+  margin-top:0px;
+  background-color:#ffebfe;
+/*   overflow:hidden; */
+  border-radius:10px;/*(圓角)*/
+  box-shadow:0px 25px 15px -10px rgb(179, 160, 159,0.7);
+  /*最後一格是透明度 1最黑*/
+}
+.namecard p{
+font-size: 12px;
+letter-spacing: 4px;
+line-height: 18px;
+}
+.namecard h2{
+  font-size:30px;
+  
+}
+.namecard h2 span{
+  font-size:18px;  
+}
+/*.namecard h5{
+  font-size:20px;  
+  color:#c71c58;
+}*改變樣式，上下兩種方式都可以。擇一。*/
+
+.namecard:hover {
+  transform: scale(1.05);
+   box-shadow:0px 25px 15px -10px rgb(179, 160, 159,0.7);
+}
+.Profession{
+  color:#c71c58;
+  font-size:12px; 
+  letter-spacing: 2px;
+line-height: 22px;
+}
+.img-fluid {
+  margin: 0 auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-sm-8 {
+    font-family: "Microsoft JhengHei", sans-serif;
+    color: #333; /* 文字顏色 */'
+  margin-top:20px;
+  padding:30px;
+}
+
+.col-sm-8 li {
+    color:#4a2601;
+    font-size: 20px; /* 文字大小 */
+    line-height: 2; /* 行高 */
+    letter-spacing: 1.5px; /* 字距 */
+}
+.namecard_title{
+  padding: 10;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+h2{
+/* background-color:#d3f5db;   */
+width: 100%;
+}
+.hhhiii h3,
+.hhhiii h6 ,.hhhiii p{
+    display: inline-block;
+}
+.hhhiii h6{
+    margin: 7px;
+}
+.col {
+  flex-direction: column;/*column上到下 row左到右*/
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+  width: 40%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;/*方向從左到右*/
+  justify-content: flex-start;/*從最左邊開始排列*/
+  gap: 1rem;/*子元素之間的間距*/
+}
+.roww a{
+  margin:10px; 
+}
+
+.link {
+  text-decoration: none;
+  color: black; /* 設定超連結文字顏色為黑色 */
+}
+.link:hover img {
+    transform: scale(1.1);
+}
+
+#s2 {
+    background-color: #95bdfc;
+  padding-top:10px;
+}
+.box {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color:#fff;
+  box-shadow:0px 0px 35px rgba(0,0,0,0.2);
+  transition:0.5s; /*動畫速度放慢 看起來不生硬*/
+  border-radius:10px;
+}
+.box:hover{
+  box-shadow:5px 5px 60px rgba(0,0,0,0.4);
+ transform:translate(-5px,-5px); /*move 看起來像整體往左上角移動*/
+}
+.top1,.top2,.top3{
+  background-position:center;
+  background-size:cover;/*圖片全部入鏡*/
+  height:280px;
+  position:relative;
+  transition:0.5s;
+}
+.top1{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/spider.jpg?raw=true);
+}
+.top2{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/stay.jpg?raw=true);
+}
+.top3{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/power.jpg?raw=true);
+}
+
+.top1 .tag,.top2 .tag,.top3 .tag{
+  width:25px;
+  height:60px;
+  background-color:#de2e10;
+  float:right;
+  margin-right:20px;
+}
+.top1 .name,.top2 .name,.top3 .name{
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  color:#fff;
+  padding:5px 15px;
+  letter-spacing:2px;/*字距*/
+  font-size:24px;
+  font-weight:500;
+  background:linear-gradient(transparent 0%,black 100%);
+  /*最底下圖層:線性漸層 0-100% 讓字變明顯且不擋到圖片*/
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top1 .name .smallText,.top2 .name .smallText,.top3 .name .smallText{
+  font-size:14px;
+}
+.cirbutton{
+  width: 50px;
+  height: 50px;
+  background-color: #fabbbb;
+  border-radius:50%;
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
+.bottom{
+  padding: 10px 20px 20px 20px;
+}
+.bottom li{
+  padding: 5px 0px;
+}
+.bottom h5{
+  display: inline-block;
+}
+.bottom ul{
+  list-style: none;
+  padding-left:0 ;
+}
+.buttons{
+  
+  margin-top:10px;
+
+}
+.btn{
+    display:inline-block;
+  margin-right: 10px;
+}
+.
+.buttons {
+  margin-top: 10px;
+}
+
+#s3 {
+    background-color: #ae56d1;
+  padding-top:10px;
+}
+
+.top4,.top5,.top6{
+  background-position:center;
+  background-size:cover;/*圖片全部入鏡*/
+  height:280px;
+  position:relative;
+  transition:0.5s;
+}
+.top4{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/DAY6.jpg?raw=true);
+}
+.top5{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/10cm.png?raw=true);
+}
+.top6{
+  background-image:url(https://github.com/TPY3845/2024web112-2/blob/main/Hoshi/011011.jpg?raw=true);
+}
+
+.top4 .tag,.top5 .tag,.top6 .tag{
+  width:25px;
+  height:60px;
+  background-color:#de2e10;
+  float:right;
+  margin-right:20px;
+}
+.top4 .name,.top5 .name,.top6 .name{
+  position:absolute;
+  left:0px;
+  bottom:0px;
+  color:#fff;
+  padding:5px 15px;
+  letter-spacing:2px;/*字距*/
+  font-size:24px;
+  font-weight:500;
+  background:linear-gradient(transparent 0%,black 100%);
+  /*最底下圖層:線性漸層 0-100% 讓字變明顯且不擋到圖片*/
+  width:100%;
+  padding-top:30px;
+  padding-bottom:15px;
+}
+.top4 .name .smallText,.top5 .name .smallText,.top6 .name .smallText{
+  font-size:14px;
+}
+.badge.badge-danger {
+   background-color: rgba(174, 86, 209, 0.5);/* 新顏色、透明度 */
+    color: #fff; /* 文字顏色，可以根據需要調整 */
+    /* 其他樣式，如邊框、圓角等，根據需要進行調整 */
+    font-size: 14px;  
+    text-align: center;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+#s4{
+   background-color:#f7f179;
+  padding-top:10px;
+}
+.p{
+  margin:20px;
+}
+.video {
+   display: flex; /* 使用 flex 布局 */
+  flex-wrap: wrap; /* 自动换行 */
+    justify-content: center;
+    align-items: center;
+  margim:10px;
+}
+#s5{
+   background-color: #f59898;
+  padding-top:10px;
+}
+.card{
+  margin-bottom:10px;
+}
+#s6{
+  height:50px;
+  display: flex; /* 使用 flex 布局 */
+  justify-content: center;
+ align-items: center;
+  margim:10px;
+  
+}
